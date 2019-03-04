@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+nav{
+  background-color: blue;
+  padding: 10px;
+  /* box-shadow: 10px 10px 4px gray; */
+}
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav a{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 278px;
+  font-size: 12px;
+  color: white;
+}
+
+.form-signon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-signon input.nobutton{
+  font-size: 15px;
+  padding: 5px;
+  height: 20px;
+  width: 200px;
+}
+.sign-button{
+  margin: 10px;
+  align-self: flex-end;
+  size: 13px;
+}
+.sign-button input{
+  height: 30px;
+  width: 100px;
+  /* padding: 5px; */
+}
+.email{
+  margin: 10px;
+ 
+}
+.pass{
+  margin: 10px;
+}
+
+.container2{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  /* border: 1px red solid; */
+  height: 80vh;
+  background-color: lightgray;
+}
+.intro{
+  /* border: 1px green solid; */
+  background-image: url('images/playa.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+.grid3{
+  margin: 15px;
+  display: grid;
+  /* border: 1px solid black; */
+  height: 40%;
+  /* border: 1px orange solid;  */
+  grid-gap: 10px;
+  /* grid-template-areas: 'grid-item1 grid-item2'
+                       'grid-item3 grid-item3'
+                       'grid-item4 grid-item5'
+                       'grid-item6 grid-item6'; */
+}
+.form-register input.nobutton2{
+  height: 30px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  /* border: none;
+  border-width:1px; */
+  padding-left: 10px;
+  font-size: 15px;
+}
+.grid-item6{
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  justify-content: center;
+}
