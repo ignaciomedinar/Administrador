@@ -24,14 +24,29 @@ nav a{
 
 .form-signon{
   display: flex;
+  /* flex-flow: row; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 80px;
+
 }
+.form-signon form{
+  display: flex;
+  /* flex-flow: row; */
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
+
 .form-signon input.nobutton{
-  font-size: 15px;
+  /* font-size: 15px;
   padding: 5px;
   height: 20px;
-  width: 200px;
+  width: 200px; */
+  
+}
+.container1 > button {
+  display: none;
 }
 .sign-button{
   margin: 10px;
@@ -45,7 +60,7 @@ nav a{
 }
 .email{
   margin: 10px;
- 
+  
 }
 .pass{
   margin: 10px;
@@ -56,7 +71,7 @@ nav a{
   grid-template-columns: 70% 30%;
   /* border: 1px red solid; */
   height: 80vh;
-  background-color: lightgray;
+  background-color: gray;
 }
 .intro{
   /* border: 1px green solid; */
@@ -70,31 +85,80 @@ h2{
   justify-content: center;
 }
 
-.grid3{
-  margin: 15px;
-  display: grid;
-  /* border: 1px solid black; */
-  height: 40%;
-  /* border: 1px orange solid;  */
-  grid-gap: 10px;
-  /* grid-template-areas: 'grid-item1 grid-item2'
-                       'grid-item3 grid-item3'
-                       'grid-item4 grid-item5'
-                       'grid-item6 grid-item6'; */
+.form-register{
+  display: flex;
+  flex-flow: column nowrap;
 }
-.form-register input.nobutton2{
+
+.grid3{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* margin: 15px;
+  display: grid;
+  width: 70%;
+  height: 40%;
+  grid-gap: 10px;
+  grid-template-areas: 'grid-item1 grid-item2'
+  'grid-item3 grid-item3'
+  'grid-item4 grid-item5'
+  'grid-item6 grid-item6';  */
+  /* border: 1px orange solid;  */
+  /* border: 1px solid black; */
+}
+
+.grid-item1{
+  grid-area: grid-item1;
+}
+.grid-item2{
+  grid-area: grid-item2;
+}
+.grid-item3{
+  grid-area: grid-item3;
+}
+.grid-item4{
+  grid-area: grid-item4;
+}
+.grid-item5{
+  grid-area: grid-item5;
+}
+input.nobutton2{
   height: 30px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  /* border: none;
-  border-width:1px; */
+  border: 1px solid black; 
   padding-left: 10px;
   font-size: 15px;
+  margin: 5px;
+  width: 40%;
+  
+}
+input.nobutton3{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black; 
+  padding-left: 10px;
+  font-size: 15px;
+  width: 86%;
+  margin: 5px;
 }
 .grid-item6{
   height: 30px;
   width: 100px;
-  border-radius: 5px;
+  border-radius: 5px; 
   justify-content: center;
+  grid-area: grid-item6;
+}
+@media(max-width:360px){
+  .form-signon, .form-signon> form{
+    /* height: 0; */
+    position: absolute;
+  }
+  .container1 > button {
+    display: block;
+  }
+  .intro{
+    /* border: 1px green solid; */
+    background:white;
+  
+  }
 }

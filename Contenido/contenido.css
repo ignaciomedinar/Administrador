@@ -1,0 +1,29 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+}
+.general, .gastos, .pagos{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    height: 150%;
+    text-decoration: none;
+    list-style: none;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin: 10px;
+}
