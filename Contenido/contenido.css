@@ -1,7 +1,11 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    
+    padding: 0;
+    background-color: lightgray;
+}
+header{
+    margin-top: -16px;
 }
 h1,
 h2,
@@ -14,16 +18,50 @@ h6{
     /* font-style: italic; */
 }
 .general, .gastos, .pagos{
+    background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
-    height: 150%;
+    height: 70%;
     text-decoration: none;
     list-style: none;
+    margin-top: 20px;
 }
+/* .proyectos { grid-area: proyectos; }
+.general { grid-area: general; }
+.pagos { grid-area: pagos; }
+.gastos { grid-area: gastos; } */
+
 .grid{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    /* grid-template-areas: 
+        'proyectos general pagos gastos'
+        'proyectos general pagos gastos'; */
+    grid-template-columns: 16% 25% 25% 25%;
+    /* height: 80vh; */
     gap: 20px;
-    margin: 10px;
+    /* margin: 10px; */
+    
+}
+.proyectos{
+    /* border-right: 1px solid black; */
+    background-color: blue;
+    height: 91vh;
+}
+.header{
+    background-color: black;
+}
+#busqueda{
+    margin: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../images/search.png');
+    background-size: 35px;
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    width: 80%;
 }
